@@ -76,14 +76,12 @@ This is an example config for the Clado MCP server for the Claude Desktop client
 
 ## Tools
 * `search_for_users` - Search for LinkedIn users with filters like query, school, and match threshold
-* `search_for_companies` - Search for companies on Clado using filters like query and match threshold
 * `enrich_linkedin` - Retrieves detailed profile information for a specific LinkedIn URL (1 credit per lookup)
 * `retrieve_contacts` - Retrieves email addresses and phone numbers for a LinkedIn profile (1 credit per lookup)
 * `scrape_linkedin` - Retrieves detailed profile data and posts with comments from a LinkedIn profile URL (2 credits per request)
 * `linkedin_post_reactions` - Retrieves reactions and engagement data for a specific LinkedIn post URL
 * `initiate_deep_research` - Start a deep research job for comprehensive LinkedIn data gathering
 * `check_deep_research_status` - Check the status of an ongoing deep research job
-* `search_yc_companies` - Search for Y Combinator companies
 
 
 ## License
