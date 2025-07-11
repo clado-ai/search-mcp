@@ -1,0 +1,66 @@
+{
+  "version": "1.0.27",
+  "description": "Clado Model Context Protocol Server",
+  "name": "@cladoai/mcp",
+  "main": "./dist/server.js",
+  "bin": {
+    "clado-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc && node -e \"require('fs').chmodSync('dist/server.js', '755')\"",
+    "start": "node dist/server.js --sse",
+    "test": "ts-node test-all-functions.ts",
+    "test:live": "RUN_LIVE_TESTS=true ts-node test-all-functions.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write .",
+    "build-resources": "node --loader ts-node/esm scripts/build_resources.ts && cp summarized.json src/resources/static/data/summarized.json && rm summarized.json && rm static_data.json",
+    "prepare": "npm run build",
+    "publish": "rm -rf dist && rm -rf node_modules && npm i && npm run build && npm publish"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "ajv": "^8.17.1",
+    "axios": "^1.8.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^16.11.7",
+    "openai": "^4.87.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.5.2"
+  },
+  "keywords": [
+    "mcp",
+    "clado",
+    "web-scraping",
+    "crawler",
+    "content-extraction"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clado-ai/clado-mcp.git"
+  },
+  "types": "./dist/server.d.ts",
+  "bugs": {
+    "url": "https://github.com/clado-ai/clado-mcp/issues"
+  },
+  "homepage": "https://github.com/clado-ai/clado-mcp#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "ISC"
+}

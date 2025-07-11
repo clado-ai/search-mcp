@@ -1,0 +1,91 @@
+# Clado MCP Server
+
+This is an unofficial Model Context Protocol (MCP) Server for Clado..
+
+More information about automcp can be found at [automcp.app](https://automcp.app).
+
+For detailed API documentation and usage examples, visit the [official Clado documentation](https://docs.clado.ai/).
+
+More information about the Model Context Protocol can be found [here](https://modelcontextprotocol.io/introduction).
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tools](#tools)
+- [Configuration](#configuration)
+- [License](#license)
+
+## Installation
+
+### Manual Installation
+To install the server, run:
+
+```bash
+npx @cladoai/mcp <YOUR-CLADO-API-KEY>
+```
+
+## Running on Cursor
+Add to `~/.cursor/mcp.json` like this:
+```json
+{
+  "mcpServers": {
+    "clado": {
+      "command": "npx",
+      "args": ["-y", "@cladoai/mcp"],
+      "env": {
+        "CLADO_API_KEY": "YOUR-API-KEY"
+      }
+    }
+  }
+}
+```
+
+## Running on Windsurf
+Add to your `./codeium/windsurf/model_config.json` like this:
+```json
+{
+  "mcpServers": {
+    "clado": {
+      "command": "npx",
+      "args": ["-y", "@cladoai/mcp"],
+      "env": {
+        "CLADO_API_KEY": "YOUR-API-KEY"
+      }
+    }
+  }
+}
+```
+
+## Claude Desktop app
+This is an example config for the Clado MCP server for the Claude Desktop client.
+
+```json
+{
+  "mcpServers": {
+    "clado": {
+      "command": "npx",
+      "args": ["--yes", "@cladoai/mcp"],
+      "env": {
+        "CLADO_API_KEY": "your-api-key"
+      }
+    }
+  }
+}
+```
+
+## Tools
+* `search_for_users` - Search for LinkedIn users with filters like query, school, and match threshold
+* `search_for_companies` - Search for companies on Clado using filters like query and match threshold
+* `enrich_linkedin` - Retrieves detailed profile information for a specific LinkedIn URL (1 credit per lookup)
+* `retrieve_contacts` - Retrieves email addresses and phone numbers for a LinkedIn profile (1 credit per lookup)
+* `scrape_linkedin` - Retrieves detailed profile data and posts with comments from a LinkedIn profile URL (2 credits per request)
+* `linkedin_post_reactions` - Retrieves reactions and engagement data for a specific LinkedIn post URL
+* `initiate_deep_research` - Start a deep research job for comprehensive LinkedIn data gathering
+* `check_deep_research_status` - Check the status of an ongoing deep research job
+* `search_yc_companies` - Search for Y Combinator companies
+
+
+## License
+
+This project is licensed under the MIT License.
