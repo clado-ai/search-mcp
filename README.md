@@ -1,8 +1,6 @@
 # Clado MCP Server
 
-This is an official Model Context Protocol (MCP) Server for Clado..
-
-More information about automcp can be found at [automcp.app](https://automcp.app).
+This is an official Model Context Protocol (MCP) Server for Clado.
 
 For detailed API documentation and usage examples, visit the [official Clado documentation](https://docs.clado.ai/).
 
