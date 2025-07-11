@@ -1,6 +1,6 @@
 # Clado MCP Server
 
-This is an unofficial Model Context Protocol (MCP) Server for Clado..
+This is an official Model Context Protocol (MCP) Server for Clado..
 
 More information about automcp can be found at [automcp.app](https://automcp.app).
 
