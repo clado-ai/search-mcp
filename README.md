@@ -2,6 +2,10 @@
 
 This is an official Model Context Protocol (MCP) Server for Clado.
 
+<a href="https://glama.ai/mcp/servers/@clado-ai/mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@clado-ai/mcp/badge" alt="Clado Server MCP server" />
+</a>
+
 For detailed API documentation and usage examples, visit the [official Clado documentation](https://docs.clado.ai/).
 
 More information about the Model Context Protocol can be found [here](https://modelcontextprotocol.io/introduction).
@@ -80,7 +84,6 @@ This is an example config for the Clado MCP server for the Claude Desktop client
 * `linkedin_post_reactions` - Retrieves reactions and engagement data for a specific LinkedIn post URL
 * `initiate_deep_research` - Start a deep research job for comprehensive LinkedIn data gathering
 * `check_deep_research_status` - Check the status of an ongoing deep research job
-
 
 ## License
 
