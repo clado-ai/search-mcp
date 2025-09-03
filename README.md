@@ -84,4 +84,4 @@ This is an example config for the Clado MCP server for the Claude Desktop client
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
