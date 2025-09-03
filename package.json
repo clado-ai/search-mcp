@@ -1,7 +1,7 @@
 {
-  "version": "1.0.27",
+  "version": "1.0.31",
   "description": "Clado Model Context Protocol Server",
-  "name": "@cladoai/mcp",
+  "name": "@clado-ai/mcp",
   "main": "./dist/server.js",
   "bin": {
     "clado-mcp": "dist/server.js"
@@ -22,7 +22,7 @@
     "format": "prettier --write .",
     "build-resources": "node --loader ts-node/esm scripts/build_resources.ts && cp summarized.json src/resources/static/data/summarized.json && rm summarized.json && rm static_data.json",
     "prepare": "npm run build",
-    "publish": "rm -rf dist && rm -rf node_modules && npm i && npm run build && npm publish"
+    "release": "rm -rf dist && rm -rf node_modules && npm i && npm run build && npm publish"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
@@ -56,9 +56,6 @@
     "url": "https://github.com/clado-ai/clado-mcp/issues"
   },
   "homepage": "https://github.com/clado-ai/clado-mcp#readme",
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
     "node": ">=18.0.0"
   },
