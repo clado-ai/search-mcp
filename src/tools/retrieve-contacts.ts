@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { makeCladoRequest } from "../utils";
+import { makeCladoRequest } from "../utils.js";
 
 export const retrieveContactsName = "retrieve_contacts";
 

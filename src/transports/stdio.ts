@@ -1,9 +1,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
-import { NAME, VERSION } from "../common";
+import { NAME, VERSION } from "../common.js";
 
-import setupServer from "../server_setup";
+import setupServer from "../server_setup.js";
 
 async function setupSSE(server: McpServer) {
   setupServer(server);
