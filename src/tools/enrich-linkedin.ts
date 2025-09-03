@@ -6,18 +6,18 @@ export const enrichLinkedinName = "enrich_linkedin";
 export const enrichLinkedinDescription = "Retrieves detailed profile information for a specific LinkedIn URL. Each successful lookup costs 1 credit.";
 
 export const enrichLinkedinSchema = {
-  url: z.string().describe("The LinkedIn profile URL to look up."),
+  linkedin_url: z.string().describe("The LinkedIn profile URL to look up."),
 };
 
 type EnrichLinkedinParams = {
-  url: string;
+  linkedin_url: string;
 };
 
 export const enrichLinkedinTool = async ({
-  url,
+  linkedin_url,
 }: EnrichLinkedinParams) => {
   const apiUrl = new URL("https://search.clado.ai/api/enrich/linkedin");
-  apiUrl.searchParams.append("url", url);
+  apiUrl.searchParams.append("linkedin_url", linkedin_url);
 
   const response = await makeCladoRequest(apiUrl.toString(), {});
   const responseData = await response.json();

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "Clado Model Context Protocol Server",
   "name": "@clado-ai/mcp",
   "main": "./dist/server.js",
