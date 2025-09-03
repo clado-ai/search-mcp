@@ -18,7 +18,7 @@ export default function createServer({ config }: { config?: z.infer<typeof confi
 
   const server = new McpServer({
     name: "clado",
-    version: "1.0.33",
+    version: "1.0.34",
   });
 
   server.tool(
