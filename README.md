@@ -78,8 +78,6 @@ This is an example config for the Clado MCP server for the Claude Desktop client
 * `retrieve_contacts` - Retrieves email addresses and phone numbers for a LinkedIn profile (1 credit per lookup)
 * `scrape_linkedin` - Retrieves detailed profile data and posts with comments from a LinkedIn profile URL (2 credits per request)
 * `linkedin_post_reactions` - Retrieves reactions and engagement data for a specific LinkedIn post URL
-* `initiate_deep_research` - Start a deep research job for comprehensive LinkedIn data gathering
-* `check_deep_research_status` - Check the status of an ongoing deep research job
 
 
 ## License

@@ -3,8 +3,6 @@ import { searchForUsersName, searchForUsersDescription, searchForUsersSchema, se
 import { enrichLinkedinName, enrichLinkedinDescription, enrichLinkedinSchema, enrichLinkedinTool } from "./tools/enrich-linkedin";
 import { retrieveContactsName, retrieveContactsDescription, retrieveContactsSchema, retrieveContactsTool } from "./tools/retrieve-contacts";
 import { scrapeLinkedinName, scrapeLinkedinDescription, scrapeLinkedinSchema, scrapeLinkedinTool } from "./tools/scrape-linkedin";
-import { initiateDeepResearchName, initiateDeepResearchDescription, initiateDeepResearchSchema, initiateDeepResearchTool } from "./tools/initiate-deep-research";
-import { checkDeepResearchStatusName, checkDeepResearchStatusDescription, checkDeepResearchStatusSchema, checkDeepResearchStatusTool } from "./tools/check-deep-research-status";
 import { linkedinPostReactionsName, linkedinPostReactionsDescription, linkedinPostReactionsSchema, linkedinPostReactionsTool } from "./tools/linkedin-post-reactions";
 
 function setupServer(server: McpServer) {
@@ -35,20 +33,6 @@ function setupServer(server: McpServer) {
     scrapeLinkedinDescription,
     scrapeLinkedinSchema,
     scrapeLinkedinTool
-  );
-
-  server.tool(
-    initiateDeepResearchName,
-    initiateDeepResearchDescription,
-    initiateDeepResearchSchema,
-    initiateDeepResearchTool
-  );
-
-  server.tool(
-    checkDeepResearchStatusName,
-    checkDeepResearchStatusDescription,
-    checkDeepResearchStatusSchema,
-    checkDeepResearchStatusTool
   );
 
   server.tool(
