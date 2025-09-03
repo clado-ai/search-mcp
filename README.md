@@ -20,7 +20,7 @@ More information about the Model Context Protocol can be found [here](https://mo
 To install the server, run:
 
 ```bash
-npx @cladoai/mcp <YOUR-CLADO-API-KEY>
+npx @clado-ai/mcp <YOUR-CLADO-API-KEY>
 ```
 
 ## Running on Cursor
@@ -30,7 +30,7 @@ Add to `~/.cursor/mcp.json` like this:
   "mcpServers": {
     "clado": {
       "command": "npx",
-      "args": ["-y", "@cladoai/mcp"],
+      "args": ["-y", "@clado-ai/mcp"],
       "env": {
         "CLADO_API_KEY": "YOUR-API-KEY"
       }
@@ -46,7 +46,7 @@ Add to your `./codeium/windsurf/model_config.json` like this:
   "mcpServers": {
     "clado": {
       "command": "npx",
-      "args": ["-y", "@cladoai/mcp"],
+      "args": ["-y", "@clado-ai/mcp"],
       "env": {
         "CLADO_API_KEY": "YOUR-API-KEY"
       }
@@ -63,7 +63,7 @@ This is an example config for the Clado MCP server for the Claude Desktop client
   "mcpServers": {
     "clado": {
       "command": "npx",
-      "args": ["--yes", "@cladoai/mcp"],
+      "args": ["--yes", "@clado-ai/mcp"],
       "env": {
         "CLADO_API_KEY": "your-api-key"
       }
