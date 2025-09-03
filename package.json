@@ -1,8 +1,9 @@
 {
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "Clado Model Context Protocol Server",
   "name": "@clado-ai/mcp",
-  "main": "./dist/server.js",
+  "type": "module",
+  "module": "src/index.ts",
   "bin": {
     "clado-mcp": "dist/server.js"
   },
@@ -13,7 +14,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc && node -e \"require('fs').chmodSync('dist/server.js', '755')\"",
+    "build": "npx @smithery/cli build",
+    "build:original": "rm -rf dist && tsc && node -e \"require('fs').chmodSync('dist/server.js', '755')\"",
+    "dev": "npx @smithery/cli dev",
     "start": "node dist/server.js --sse",
     "test": "ts-node test-all-functions.ts",
     "test:live": "RUN_LIVE_TESTS=true ts-node test-all-functions.ts",
@@ -21,8 +24,8 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write .",
     "build-resources": "node --loader ts-node/esm scripts/build_resources.ts && cp summarized.json src/resources/static/data/summarized.json && rm summarized.json && rm static_data.json",
-    "prepare": "npm run build",
-    "release": "rm -rf dist && rm -rf node_modules && npm i && npm run build && npm publish"
+    "prepare": "npm run build:original",
+    "release": "rm -rf dist && rm -rf node_modules && npm i && npm run build:original && npm publish"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
@@ -49,13 +52,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clado-ai/clado-mcp.git"
+    "url": "git+https://github.com/clado-ai/search-mcp.git"
   },
   "types": "./dist/server.d.ts",
   "bugs": {
-    "url": "https://github.com/clado-ai/clado-mcp/issues"
+    "url": "https://github.com/clado-ai/search-mcp/issues"
   },
-  "homepage": "https://github.com/clado-ai/clado-mcp#readme",
+  "homepage": "https://github.com/clado-ai/search-mcp#readme",
   "engines": {
     "node": ">=18.0.0"
   },

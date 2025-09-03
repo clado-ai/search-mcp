@@ -3,8 +3,8 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
 import { requireBearerAuth } from "@modelcontextprotocol/sdk/server/auth/middleware/bearerAuth.js";
 
-import { NAME, VERSION } from "../common";
-import setupServer from "../server_setup";
+import { NAME, VERSION } from "../common.js";
+import setupServer from "../server_setup.js";
 
 function setupSSE(app: express.Application, server: McpServer) {
   setupServer(server);
