@@ -86,5 +86,4 @@ This is an example config for the Clado MCP server for the Claude Desktop client
 * `check_deep_research_status` - Check the status of an ongoing deep research job
 
 ## License
-
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
