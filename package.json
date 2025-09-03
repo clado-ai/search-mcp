@@ -1,5 +1,5 @@
 {
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "Clado Model Context Protocol Server",
   "name": "@cladoai/mcp",
   "main": "./dist/server.js",
@@ -56,9 +56,6 @@
     "url": "https://github.com/clado-ai/clado-mcp/issues"
   },
   "homepage": "https://github.com/clado-ai/clado-mcp#readme",
-  "publishConfig": {
-    "access": "public"
-  },
   "engines": {
     "node": ">=18.0.0"
   },
